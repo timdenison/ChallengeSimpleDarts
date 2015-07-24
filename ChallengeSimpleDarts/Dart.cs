@@ -27,11 +27,11 @@ namespace Darts
 
         public void Throw()
         {
-            this.BaseScore = random.Next(0,20);
+            this.BaseScore = random.Next(0,21);
             if (BaseScore == 0)
             {
                 this.Bullseye = true;
-                if (random.Next(1, 20) == 1)
+                if (random.Next(1, 21) == 1)
                 {
                     this.InnerBullseye = true;
                     this.BaseScore = 50;
@@ -40,7 +40,7 @@ namespace Darts
             }
             else
             {
-                int bonus = random.Next(1,20);
+                int bonus = random.Next(1,21);
                 if (bonus == 1)
                     this.DoubleBand = true;
                 else if (bonus == 2)
